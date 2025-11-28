@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans text-gray-900 bg-white;
+    background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-black text-white px-6 py-2 rounded-md font-medium hover:bg-gray-800 transition-colors;
+  }
+  
+  .sticky-note {
+    @apply p-6 shadow-md transform transition-transform hover:scale-105 duration-300 aspect-square flex flex-col justify-between;
+  }
+}
