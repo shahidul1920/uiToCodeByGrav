@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 @layer base {
   body {
@@ -14,7 +12,7 @@
   .btn-primary {
     @apply bg-black text-white px-6 py-2 rounded-md font-medium hover:bg-gray-800 transition-colors;
   }
-  
+
   .sticky-note {
     @apply p-6 shadow-md transform transition-transform hover:scale-105 duration-300 aspect-square flex flex-col justify-between;
   }
